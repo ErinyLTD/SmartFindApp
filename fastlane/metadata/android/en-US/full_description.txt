@@ -1,0 +1,21 @@
+SmartFind is a find-my-phone app triggered by SMS from designated contacts.
+
+When a trusted contact sends an SMS containing your chosen keyword, SmartFind sounds a loud alarm — even if your phone is on silent or Do Not Disturb mode.
+
+Features:
+• Designated contacts — only people you trust can trigger the alarm
+• Custom trigger keyword — choose your own secret word (default: FIND)
+• Bypasses silent mode and Do Not Disturb — the alarm always sounds
+• Biometric authentication — all settings changes require fingerprint or PIN
+• Encrypted storage — contacts and settings secured with Android Keystore
+• Cooldown protection — prevents alarm spam with configurable cooldown
+• SMS spoof detection — validates SMS origin to prevent abuse
+• Audit log — full history of alarm triggers and events
+• Device admin — optional uninstall protection
+• Battery-aware — adapts behavior based on power save mode
+
+Privacy:
+• Zero internet connections — operates entirely offline
+• No analytics, no tracking, no cloud services
+• All data stored locally on your device
+• Phone numbers redacted in audit logs

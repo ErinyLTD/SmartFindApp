@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFind - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #212121;
+            background-color: #FAFAFA;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0D47A1;
+            color: #FFFFFF;
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 24px 64px;
+        }
+
+        h2 {
+            color: #1565C0;
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #E0E0E0;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #424242;
+        }
+
+        ul {
+            margin: 8px 0 16px 24px;
+            color: #424242;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight {
+            background-color: #E3F2FD;
+            border-left: 4px solid #1565C0;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+
+        .warning {
+            background-color: #FFF3E0;
+            border-left: 4px solid #FF6F00;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .warning p {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #1565C0;
+            color: white;
+            padding: 10px 14px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 10px 14px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F5F5F5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #757575;
+            font-size: 13px;
+            border-top: 1px solid #E0E0E0;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #1565C0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: #757575;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SmartFind</h1>
+    <p>Privacy Policy</p>
+</header>
+
+<main>
+    <p class="last-updated">Last updated: February 16, 2026</p>
+
+    <div class="highlight">
+        <p>SmartFind is designed with privacy as a core principle. The app operates entirely offline, stores all data locally on your device, and never connects to the internet.</p>
+    </div>
+
+    <h2>1. Overview</h2>
+    <p>SmartFind is an Android application that listens for incoming SMS messages matching a specific keyword exactly from designated phone numbers. The entire message must be only the keyword — no extra words or punctuation. When triggered, the app sounds a loud alarm to help you locate your misplaced device. This privacy policy explains what data the app accesses, how it is used, and how it is protected.</p>
+
+    <h2>2. Data We Collect</h2>
+    <p><strong>SmartFind does not collect, transmit, or store any personal data on external servers.</strong> There are no analytics, no crash reporting, no advertising SDKs, and no cloud services of any kind.</p>
+
+    <h3>2.1 Data Stored Locally on Your Device</h3>
+    <p>The following data is stored exclusively on your device in encrypted local storage (EncryptedSharedPreferences backed by Android's hardware keystore) and a local SQLite database:</p>
+
+    <table>
+        <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+            <th>Storage</th>
+        </tr>
+        <tr>
+            <td>Designated phone numbers</td>
+            <td>To identify which contacts can trigger the alarm</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Contact display names</td>
+            <td>To show friendly names next to phone numbers in the app</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Trigger keyword</td>
+            <td>To identify the SMS content that triggers the alarm</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Service enabled/disabled state</td>
+            <td>To remember whether monitoring is active</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Settings (cooldown period)</td>
+            <td>To configure alarm trigger behavior</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Last SMS check timestamp</td>
+            <td>To avoid processing the same message twice</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Audio volume/ringer state</td>
+            <td>To restore your original settings after the alarm stops</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Rate-limit timestamps</td>
+            <td>To enforce a maximum of 5 alarm triggers per hour</td>
+            <td>Encrypted preferences</td>
+        </tr>
+        <tr>
+            <td>Audit log events</td>
+            <td>To maintain a tamper-evident record of alarm triggers, settings changes, and authentication attempts (phone numbers are redacted to last 4 digits; keywords are never logged)</td>
+            <td>Local SQLite database</td>
+        </tr>
+    </table>
+
+    <h3>2.2 Data the App Does NOT Store</h3>
+    <ul>
+        <li>SMS message contents (messages are checked in memory and immediately discarded)</li>
+        <li>Full phone numbers in the audit log (only the last 4 digits are recorded)</li>
+        <li>Location data of any kind</li>
+        <li>Call logs</li>
+        <li>Your contacts database (contact names are only stored for numbers you explicitly add to SmartFind)</li>
+        <li>Device identifiers, advertising IDs, or hardware information</li>
+        <li>Usage statistics or behavioral data</li>
+    </ul>
+
+    <h2>3. Permissions</h2>
+    <p>SmartFind requires the following Android permissions to function. Each is used strictly for its stated purpose:</p>
+
+    <table>
+        <tr>
+            <th>Permission</th>
+            <th>Why It's Needed</th>
+        </tr>
+        <tr>
+            <td>RECEIVE_SMS</td>
+            <td>To detect incoming trigger messages in real time</td>
+        </tr>
+        <tr>
+            <td>READ_PHONE_STATE</td>
+            <td>To detect active phone calls (alarm is suppressed during calls) and to validate SMS subscription IDs for spoof detection</td>
+        </tr>
+        <tr>
+            <td>READ_CONTACTS</td>
+            <td>To let you pick designated contacts from your address book when adding phone numbers</td>
+        </tr>
+        <tr>
+            <td>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK</td>
+            <td>To play the alarm sound reliably via a foreground service</td>
+        </tr>
+        <tr>
+            <td>WAKE_LOCK</td>
+            <td>To keep the device awake while the alarm is playing</td>
+        </tr>
+        <tr>
+            <td>RECEIVE_BOOT_COMPLETED</td>
+            <td>To restart SMS monitoring after the device reboots</td>
+        </tr>
+        <tr>
+            <td>ACCESS_NOTIFICATION_POLICY</td>
+            <td>To override Do Not Disturb mode so the alarm is audible</td>
+        </tr>
+        <tr>
+            <td>USE_FULL_SCREEN_INTENT</td>
+            <td>To display the alarm stop screen over the lock screen when triggered</td>
+        </tr>
+        <tr>
+            <td>SCHEDULE_EXACT_ALARM</td>
+            <td>To schedule the periodic contact reconfirmation reminder (every 6 months)</td>
+        </tr>
+        <tr>
+            <td>POST_NOTIFICATIONS</td>
+            <td>Required on Android 13+ to show the persistent monitoring notification and alarm notifications</td>
+        </tr>
+    </table>
+
+    <h2>4. Internet Usage</h2>
+    <div class="highlight">
+        <p>SmartFind makes zero internet connections. The app does not require, request, or use the INTERNET permission. No data is ever transmitted over the network to any server. A network security configuration explicitly disables all cleartext traffic as a defense-in-depth measure.</p>
+    </div>
+    <p>No data leaves your device over the internet. SmartFind only reads incoming SMS messages through the standard Android SMS APIs and never sends any messages or network requests.</p>
+
+    <h2>5. Location Data</h2>
+    <p><strong>SmartFind does not access, collect, or transmit any location data.</strong> The app does not use GPS, network location, or cell tower information. No location permissions are requested.</p>
+
+    <h2>6. SMS Data</h2>
+    <p>SmartFind reads incoming SMS messages solely to check whether they match your configured trigger conditions (designated number + keyword). Messages are processed in memory and are <strong>never stored or forwarded</strong>. Non-matching messages are ignored and discarded immediately.</p>
+    <p>When a trigger match occurs, the audit log records the event type (e.g., "alarm triggered") and the sender's phone number redacted to the last 4 digits. The message content is never logged.</p>
+    <p>SmartFind does not intercept, block, or hide any SMS messages. Incoming messages remain visible in your normal SMS app.</p>
+
+    <h2>7. Audit Log</h2>
+    <p>SmartFind maintains a local audit log of security-relevant events in a SQLite database on your device. This log records:</p>
+    <ul>
+        <li>Alarm triggers, activations, and stops</li>
+        <li>Settings changes (e.g., service enabled/disabled, keyword changed, cooldown adjusted)</li>
+        <li>Authentication successes and failures</li>
+        <li>Rate-limit events and suppressed triggers (Android Auto, phone call, reception grace window)</li>
+        <li>SMS spoofing detection events</li>
+    </ul>
+    <p>Phone numbers are <strong>redacted to the last 4 digits</strong> before being written to the audit log. Keywords are never logged. The log retains the most recent 500 events and is never transmitted off-device.</p>
+
+    <h2>8. Authentication and Safety</h2>
+    <p>SmartFind requires biometric authentication or your device PIN/pattern/password to change any configuration (enabling/disabling the service, changing the keyword, adding or removing contacts, adjusting settings). This protects against unauthorized changes.</p>
+    <p>The following safety features are permanently enabled and cannot be disabled:</p>
+    <ul>
+        <li><strong>Active use protection</strong> &mdash; the alarm is suppressed when you are actively using your phone (screen on and unlocked)</li>
+        <li><strong>Android Auto protection</strong> &mdash; the alarm is suppressed while driving, replaced with a silent notification</li>
+        <li><strong>Phone call protection</strong> &mdash; the alarm is suppressed during active phone calls</li>
+        <li><strong>Lock screen privacy</strong> &mdash; notification details are hidden on the lock screen</li>
+        <li><strong>Low battery protection</strong> &mdash; reduced alarm behavior at low battery to conserve power</li>
+        <li><strong>Rate limiting</strong> &mdash; a maximum of 5 alarm triggers per hour</li>
+        <li><strong>Cooldown period</strong> &mdash; a minimum 2-minute wait between alarms (configurable up to 30 minutes)</li>
+    </ul>
+
+    <h2>9. Device Administrator (Optional)</h2>
+    <p>During first-run setup, SmartFind optionally offers to register as a device administrator. This feature <strong>only</strong> prevents the app from being silently uninstalled &mdash; it does not grant SmartFind any device management capabilities (no password enforcement, no remote wipe, no camera control, no encryption policy). You can disable this at any time through <strong>Settings &gt; Security &gt; Device Administrators</strong>.</p>
+
+    <h2>10. Third-Party Libraries</h2>
+    <p>SmartFind uses the following third-party libraries, none of which collect or transmit user data:</p>
+    <ul>
+        <li><strong>AndroidX WorkManager</strong> &mdash; schedules periodic SMS checks. Runs entirely on-device.</li>
+        <li><strong>AndroidX Biometric</strong> &mdash; provides the authentication prompt. No data leaves the device.</li>
+        <li><strong>AndroidX Security (EncryptedSharedPreferences)</strong> &mdash; encrypts stored settings using the hardware keystore. No data leaves the device.</li>
+        <li><strong>AndroidX Room</strong> &mdash; local SQLite database for the audit log. No data leaves the device.</li>
+        <li><strong>AndroidX AppCompat / Material Components</strong> &mdash; UI libraries. No data collection.</li>
+    </ul>
+
+    <h2>11. Data Sharing</h2>
+    <p>SmartFind does not share any data with any third parties. There are no:</p>
+    <ul>
+        <li>Analytics or tracking services</li>
+        <li>Advertising networks</li>
+        <li>Crash reporting tools</li>
+        <li>Cloud storage or backup services (cloud backup and device-to-device transfer are explicitly disabled)</li>
+        <li>Social media integrations</li>
+    </ul>
+
+    <h2>12. Data Retention and Deletion</h2>
+    <p>All app data is stored locally on your device in encrypted preferences and a local SQLite database. The audit log automatically prunes old entries beyond the most recent 500 events. You can delete all data at any time by:</p>
+    <ul>
+        <li>Going to <strong>Settings &gt; Apps &gt; SmartFind &gt; Storage &gt; Clear Data</strong></li>
+        <li>Uninstalling the app (all data is permanently removed)</li>
+    </ul>
+    <p>If device administrator is enabled, you must first disable it in <strong>Settings &gt; Security &gt; Device Administrators</strong> before uninstalling.</p>
+    <p>There is no server-side data to delete because no data is ever transmitted to any server. Cloud backup and device-to-device transfer are explicitly disabled, so no app data leaves your device through Android's backup system.</p>
+
+    <h2>13. Security</h2>
+    <p>SmartFind protects your data through multiple layers:</p>
+    <ul>
+        <li><strong>Encrypted storage</strong> &mdash; all settings (phone numbers, keyword, preferences) are encrypted using AES-256-GCM with keys stored in Android's hardware-backed keystore</li>
+        <li><strong>Authentication</strong> &mdash; biometric or device PIN/pattern/password is required for all configuration changes</li>
+        <li><strong>Sandboxed storage</strong> &mdash; app data is stored in Android's private app directory, inaccessible to other apps on non-rooted devices</li>
+        <li><strong>Backup exclusion</strong> &mdash; cloud backup and device transfer are disabled to prevent data from leaving the device</li>
+        <li><strong>No cleartext traffic</strong> &mdash; network cleartext traffic is explicitly disabled</li>
+        <li><strong>SMS spoof detection</strong> &mdash; incoming trigger messages are validated against subscription IDs and service center addresses to detect spoofing attempts</li>
+        <li><strong>Audit trail</strong> &mdash; all security-relevant events are logged with redacted PII for forensic accountability</li>
+    </ul>
+
+    <h2>14. Children's Privacy</h2>
+    <p>SmartFind does not knowingly collect any personal information from anyone, including children under the age of 13. The app stores only the configuration data you explicitly enter (phone numbers, contact names, and trigger keyword).</p>
+
+    <h2>15. Changes to This Policy</h2>
+    <p>If this privacy policy is updated, the changes will be reflected in this document with an updated "Last updated" date. Since SmartFind does not connect to the internet, policy updates will accompany new versions of the app.</p>
+
+    <h2>16. Contact</h2>
+    <p>If you have questions or concerns about this privacy policy or SmartFind's data practices, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@smartfind.app">privacy@smartfind.app</a></p>
+
+</main>
+
+<footer>
+    <p>SmartFind &copy; 2026. All rights reserved.</p>
+    <p>This app is open source and operates entirely offline.</p>
+</footer>
+
+</body>
+</html>

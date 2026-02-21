@@ -1,0 +1,3 @@
+• Removed READ_SMS permission for Google Play compliance
+• SMS detection now uses RECEIVE_SMS broadcast only
+• Removed SMS polling fallback

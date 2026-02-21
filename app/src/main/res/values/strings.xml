@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">SmartFind</string>
+    <string name="alarm_is_active">ALARM IS ACTIVE</string>
+    <string name="service_status">Service Status</string>
+    <string name="status_active">Active</string>
+    <string name="status_inactive">Inactive</string>
+    <string name="trigger_keyword">Trigger Keyword</string>
+    <string name="keyword_hint">FIND</string>
+    <string name="keyword_instructions">Case sensitive, whole word match</string>
+    <string name="designated_contacts">Designated Contacts</string>
+    <string name="add_number_button">+ Add Number</string>
+    <string name="stop_alarm_button">STOP ALARM</string>
+    <string name="test_alarm_button">Test Alarm</string>
+    <string name="last_check_label">Last check: %s</string>
+    <string name="last_check_default">Last check: --</string>
+    <string name="local_storage_notice">All data stored locally. No internet connection used.</string>
+    <string name="remove_number_desc">Remove number</string>
+    
+    <!-- Dialogs & Toasts -->
+    <string name="permission_denied_warning">Some permissions were denied. SmartFind may not work fully.</string>
+    <string name="stale_alarm_log">Stale alarm_active flag detected — resetting to false</string>
+    <string name="no_cellular_title">No Cellular Radio</string>
+    <string name="no_cellular_msg">This device does not have cellular hardware. SmartFind uses SMS to trigger alarms and will not function without a SIM card.\n\nYou can continue to explore the app.</string>
+    <string name="ok">OK</string>
+    <string name="close">Close</string>
+    <string name="no_sim_title">No SIM Card</string>
+    <string name="no_sim_msg">SmartFind requires a SIM card to send and receive SMS. Please insert a SIM card and reopen the app.</string>
+    <string name="security_warning_title">Security Warning</string>
+    <string name="security_warning_msg">Your device does not have a PIN, pattern, or password set. Without a lock screen, SmartFind\'s authentication protection cannot prevent unauthorized changes to your settings.</string>
+    <string name="auth_change_keyword_title">Change Keyword</string>
+    <string name="auth_change_keyword_subtitle">Authenticate to change the trigger keyword</string>
+    <string name="auth_add_contact_title">Add Contact</string>
+    <string name="auth_add_contact_subtitle">Authenticate to add a designated contact</string>
+    <string name="contacts_permission_required">Contacts permission is required to add a contact</string>
+    <string name="auto_suppressed">Android Auto active. Alarm suppressed for safety.</string>
+    <string name="call_suppressed">Phone call active. Alarm suppressed.</string>
+    <string name="add_number_first">Add at least one phone number first</string>
+    <string name="keyword_too_short">Keyword must be at least 3 characters</string>
+    <string name="auth_enable_service_title">Enable SmartFind</string>
+    <string name="auth_enable_service_subtitle">Authenticate to enable SMS monitoring</string>
+    <string name="unknown_contact">Unknown</string>
+    <string name="remove_contact_title">Remove Contact</string>
+    <string name="remove_contact_msg">Remove %1$s (%2$s) from designated contacts?</string>
+    <string name="remove_button">Remove</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="auth_remove_contact_subtitle">Authenticate to remove %s</string>
+    <string name="added_contact_toast">Added %s</string>
+    <string name="contact_no_numbers">Contact has no phone numbers</string>
+    <string name="choose_number_title">Choose Number for %s</string>
+    <string name="confirm_contacts_title">Confirm Your Contacts</string>
+    <string name="confirm_contacts_msg">It\'s been 6 months. Please confirm your designated contacts are still correct:\n\n%s\n\nAre these contacts still correct?</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="edit_numbers_button">Edit Numbers</string>
+    <string name="numbers_confirmed_toast">Numbers confirmed</string>
+</resources>
